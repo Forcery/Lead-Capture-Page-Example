@@ -1,0 +1,183 @@
+/*====RESET====*/
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  background-color: #292929ef;
+}
+
+/*====LAYOUT====*/
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*====HEADER====*/
+header {
+  padding: 10px;
+  background-color: #48c5ce;
+  color: #f5fff9;
+  text-align: center;
+}
+
+.title {
+  font-size: 20pt;
+}
+
+/*====MAIN====*/
+section {
+  padding-top: 10px;
+  background: url('../images/people.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+/*==FORMAREA==*/
+.formContainer {
+  max-width: 250px;
+  background-color: #fffffebf;
+  padding: 21px;
+  float: right;
+  margin: 8px;
+}
+
+.formContainer h2 {
+  font-size: 15pt;
+}
+
+.formContainer p {
+  text-align: justify;
+}
+
+.margbttm {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+input[type='submit'] {
+  background-color: #48c5ce;
+  color: #f5fffa;
+  font-weight: bolder;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url('../images/arrow.jpg');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 9px);
+  background-position-y: center;
+}
+
+/*====FOOTER====*/
+footer {
+  padding: 42px;
+  background-color: #404040;
+  text-align: center;
+}
+
+.Author {
+  width: 198px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.authorDescription {
+  display: inline-block;
+  max-width: 45%;
+  color: #f5fff9;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.authorDescription h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.authorDescription p {
+  margin-bottom: 20px;
+  text-align: justify-all;
+}
+
+/*====MEDIA QUERIES====*/
+
+@media screen and (max-width: 790px) {
+  .container {
+    max-width: 890px;
+    margin: auto;
+  }
+
+  /*====HEADER====*/
+  header {
+    padding: 7px;
+    background-color: #48c5ce;
+    color: #f5fff5;
+    text-align: center;
+  }
+  .title {
+    font-size: 16pt;
+  }
+
+  /*==FORMAREA==*/
+  .formContainer {
+    max-width: 100%;
+    background-color: #ffffeeaf;
+    padding: 16px;
+    float: left;
+    margin: 8px;
+  }
+
+  .formContainer h2 {
+    font-size: 12pt;
+  }
+
+  .formContainer p {
+    text-align: justify;
+  }
+
+  input,
+  select {
+    width: 72%;
+    box-sizing: border-box;
+    padding: 7px;
+    margin-bottom: 9.3px;
+    border: none;
+  }
+
+  /*====FOOTER====*/
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .Author {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+  }
+
+  .authorDescription {
+    display: inline-block;
+    max-width: 90%;
+    color: #f5fff9;
+    text-align: left;
+    margin-left: 6.8px;
+  }
+
+  .authorDescription h3 {
+    text-align: center;
+  }
+  .authorDescription p {
+    margin-bottom: 10px;
+    text-align: justify-all;
+  }
+}
